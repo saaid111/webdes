@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+	<script>
+	function validate(){			//function for email validation
+		var mail = document.getElementById("email").value;
+		
+		var regx = /^(a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+		
+		if(regx.test(mail)){
+			alert("you have provided a valid email")
+			return true;
+		
+		}
+		else{
+			alert("incorrect email!")
+			return false;
+		}
+		
+	} 
+	</script>
+	
+	
+   </head>
+<body>
+
+	 <h1>home</h1>
+		
+	 <div class="contact">
+	  <h1>contact us</h1>
+	  <p>  We Would Love To Hear From You!</p>
+	 </div> 		
+						
+	 <form>								
+		<div class="form-group">
+			<label>full name</label>
+			<input name="name" class="" placeholder="your name" />
+			<div class="error-hint hidden">your name is required.</div>
+		</div>
+		
+		<div class="form-group">
+			<label>email</label>
+			<input id="email" placeholder="email"  type="text">
+			<button onclick= "validate()" type="button">validate email</button>  
+			
+		</div>
+		
+		<div class="form-group">
+			<label>message</label>
+			<textarea></textarea>
+			
+		</div>
+		
+		<div class="form-group">
+		<label>choose country</label>
+		
+		<select>
+				<option>ireland</option>
+				<option>england</option>
+				<option>wales</option>
+				<option>scotland</option>
+				<option>northern ireland</option>
+			</select>
+			
+		</div>
+		
+		
+		
+		
+		<hr />
+		
+		<button >submit message</button>
+	  </form>
+	  
+	  <div class= "thanks hidden">
+		Thanks for your message!click <a href="homepage.html">here</a> to go back home!
+	  </div>
+	  
+	  <script src="index1.js"></script>
+	
+	</body>
+</html>

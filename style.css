@@ -1,0 +1,287 @@
+ body{
+	 margin: 0;
+	 font-family: sans-serrif;
+ }
+ 
+ .contact{
+	 background-image: linear-gradient(
+	 to right,
+	 rgb(211,211,211) 0%,
+	 rgb(211,211,211) 100%
+	 );
+	 color: black;
+	 font-size:20px;
+	 padding: 40px;
+ }
+ 
+ form{
+	 padding: 25px;
+ }
+ 
+ form-group{
+	 margin-bottom: 20px;
+ }
+ 
+ }
+ 
+ .form-group label{
+	 display: block;
+	 font-size: 25px;
+	 margin-bottom: 10px;
+ }
+ 
+ .form-group input{
+	 width: 320px;
+	 padding:10px;
+	 font-size: 20px;
+	 color: #333;
+	 margin-bottom: 10px;
+ }
+ 
+ input.invalid{
+	 border: 1px solid red;
+ }
+ 
+ .error-hint{
+	 color: red;
+ }
+ 
+ hr{
+	 height: 1px;
+	 background-color: green;
+	 border: none;
+	 margin-top: 25px;
+	 margin-bottom: 20px;
+ }
+ 
+
+button{
+	padding: 10px;
+	font-size: 24px;
+	background: none;
+	border: 1px solid green;
+	border-radius: 10px;
+	transition: all 0.3s;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+button:hover{
+	background-color:green;
+	border: black;
+	color: white;
+}
+ 
+.hidden{
+	display:none;
+}
+
+.thanks{
+	padding: 40px;
+	font-size: 30px;
+	text-align: center;
+}
+ 
+
+.container{
+	position: relative;
+	min-height: 100vh;
+	background: #ddd;
+}
+
+.container h1{
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:normal;
+	padding: 15px;
+	color: #333;
+	text-align: center;
+	text-transform: capitalize;
+	background: grey;
+	
+}
+
+.container .image-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	justify-content: center;
+	padding: 10px;
+}
+
+.container .image-container .image{
+	height: 250px;
+	width: 350px;
+	border: 10px solid white;
+	box-shadow: 0 5px 15px rgba(0,0,0,.1);
+	overflow:hidden;
+	cursor: pointer;
+}
+
+.container .image-container .image img{
+	height: 250px;
+	width: 350px;
+	object-fit: cover;
+	transition: .2s linear;
+}
+
+.container .image-container .image:hover img{
+	transform: scale(1.1);
+	
+}
+
+.container .popup-image{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.9);
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+
+.container .popup-image span{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 60px;
+	font-weight : bolder;
+	color: white;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.container .popup-image img{
+	position: absolute;
+	top: 20%;
+	left: 36%;
+	border: 5px solid white;
+	border-radius: 5px;
+	width: 400px;
+	object-fit: cover;
+}
+
+@media (max-width: 768px){
+	.container .popup-image img{
+		width: 95%;
+	}
+}
+
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(image/code.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.logo {
+	float: left;
+	width: 100px;
+	}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
+}
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.welcome-text h1 span {
+	color: #00fecb;
+}
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
+	
+
+
+
+
+
+ 
